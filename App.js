@@ -15,11 +15,19 @@ export default class App extends React.Component {
     <ScrollView>
       <Question 
       Q='What other places have you been to before?'
+      survey='Options'
+      option1='Yes'
+      option2='No'
       />
       
+      <Question
+      survey='UserInput'
+      Q='Do you have any dietary constraints?'
+      placeholder='Enter Here:'
+      />
     </ScrollView>
   );
-}
+} 
 }
 
 const styles = StyleSheet.create({
